@@ -1,0 +1,197 @@
+body {
+  background-color: white;
+}
+
+.the-head {
+  width: 100%;
+  position: absolute
+  top: 50%;
+  min-height: 100vh;
+  
+}
+
+.crown {
+  position: absolute;
+  top : 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.auricular {
+  height: 450px;
+}
+
+.supercilium {
+color: black;
+}
+
+.lores {
+  color: black;
+}
+
+.navbar {
+  background-color: white;
+  padding: 0 60px 0 60px;
+  margin: 20px 0 20px 0;
+}
+
+.nav-link {
+  margin-right: 40px;
+  color: white;
+}
+
+.nav-item {
+  color: white;
+}
+
+.navbar-toggler {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: white ;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+
+/* State when the navbar is collapsed*/
+
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=10);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 20px;
+  transform: rotate(0deg);
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px!important;
+  margin-right: 0px!important;
+  }
+  
+  /*--- Fixed Video Background iOS/Mobile Style--*/
+  .video-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #video {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    z-index: -1000;
+  }
+  .video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+  }
+
+  .caption {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+
+.caption h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-shadow: .1rem .1rem .8rem white;
+  padding-bottom: 1rem;
+}
+
+.price-one-to-two {
+  position: absolute
+  top: 50%;
+  min-height: 100vh;
+  background-color: white;
+
+}
+
+.meaningfull-titles {
+  font-size: 1.6rem;
+  color: white;
+}
